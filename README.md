@@ -94,3 +94,4 @@ Use the git channel for bugs and requests.
 ## Changelog
 
 V.0.0.1. First publication.
+V.0.0.2. Minor Fix configuration.
