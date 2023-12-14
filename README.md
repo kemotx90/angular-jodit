@@ -1,27 +1,96 @@
-# AngularJodit
+# angular-jodit
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.1.
+angular-jodit is a streamlined and small project that allows you to use `Jodit` within an angular project without compromise.
+To allow angular users (including me) a quick approach to using it,
+the jodit editor has been wrapped inside a component that allows you to manage the text in the editor in compiling and retrieving,
+using the most classic angular reactive forms, specifically, it is sufficient to use a
 
-## Development server
+```typescript 
+FormControl<string>
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+The component is a standalone component that needs to be imported in order to be used, as it is done for example for the Angular CKD. 
+The component uses Signal (default for Angular 17) for proper synchronization and refresh.
 
-## Code scaffolding
+N.B. This project is a self-taught project aimed at helping those who use Jodit for Angular. 
+We are not affiliated with the developers of Jodit, who we would like to thank for their excellent work.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Version
 
-## Build
+|Jodit | Angular | angular-jodit |
+| - |---------| - |
+| 4.0.0-beta.117 | 17.0.+  | 0.0.1 |
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Installation
 
-## Running unit tests
+Import this dependency into your project in the following way, use `npm i --save angular-jodit` or `npm i -D --save angular-jodit`,
+whatever you prefer.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Usage
 
-## Running end-to-end tests
+In TS File
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```typescript
+@Component({})
+export class MyComponent {
 
-## Further help
+  editorTextForm = this.formBuilder.nonNullable.control('');
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+  constructor(
+    private formBuilder: FormBuilder
+  ) {
+  }
+
+}
+```
+
+In HTML Template
+
+```html
+
+<angular-jodit [formControl]="editorTextForm" [options]="joditConfig"></angular-jodit>
+```
+
+joditConfig is an object that contains the editor's configurations and it is the same object that you can find explained in the official jodit documentation.
+
+Example of joditConfig
+
+```typescript
+joditConfi: any = {
+  observer: {
+    timeout: 100
+  },
+  buttons: [
+    'fontsize', 'brush', '|',
+    'bold', 'italic', 'underline', 'strikethrough', '|',
+  ],
+  textIcons: false,
+  spellcheck: true,
+  width: 'auto',
+  height: 'auto',
+  language: 'en',
+  toolbar: true,
+  showCharsCounter: false,
+  showWordsCounter: false,
+  showXPathInStatusbar: false,
+  toolbarButtonSize: "middle" as any,
+  theme: 'default',
+  useSplitMode: false,
+  colorPickerDefaultTab: 'color' as any,
+  removeButtons: [],
+  disablePlugins: [],
+  events: {}
+}
+```
+
+## License
+
+MIT
+
+## Contact Information
+
+Use the git channel for bugs and requests.
+
+## Changelog
+
+V.0.0.1. First publication.
