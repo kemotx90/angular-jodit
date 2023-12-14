@@ -1,8 +1,9 @@
 {
   "name": "angular-jodit",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Angular component for Jodit Editor",
   "homepage": "https://github.com/kemotx90/angular-jodit#readme",
+  "files": ["/dist"],
   "keywords": [
     "typescript",
     "jodit",
