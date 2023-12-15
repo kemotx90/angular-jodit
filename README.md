@@ -9,17 +9,17 @@ using the most classic angular reactive forms, specifically, it is sufficient to
 FormControl<string>
 ```
 
-The component is a standalone component that needs to be imported in order to be used, as it is done for example for the Angular CKD. 
+The component is a standalone component that needs to be imported in order to be used, as it is done for example for the Angular CKD.
 The component uses Signal (default for Angular 17) for proper synchronization and refresh.
 
-N.B. This project is a self-taught project aimed at helping those who use Jodit for Angular. 
+N.B. This project is a self-taught project aimed at helping those who use Jodit for Angular.
 We are not affiliated with the developers of Jodit, who we would like to thank for their excellent work.
 
 ## Version
 
-|Jodit | Angular | angular-jodit |
-| - |---------| - |
-| 4.0.0-beta.117 | 17.0.+  | 0.0.1 |
+| Jodit          | Angular | angular-jodit |
+|----------------|---------|---------------|
+| 4.0.0-beta.117 | 17+     | 0.0.6         |
 
 ## Installation
 
@@ -93,6 +93,13 @@ Use the git channel for bugs and requests.
 
 ## Changelog
 
-V.0.0.1. First publication.
-V.0.0.2. Minor Fix configuration.
-V.0.0.3. Minor Fix configuration.
+* V.0.0.1. First publication.
+* V.0.0.2 - V.0.0.6 Minor Fix configuration.
+
+## BUILD
+
+```shell
+ng build my-lib
+cd dist/my-lib
+npm publish
+```

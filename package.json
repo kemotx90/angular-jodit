@@ -1,9 +1,8 @@
 {
   "name": "angular-jodit",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "Angular component for Jodit Editor",
   "homepage": "https://github.com/kemotx90/angular-jodit#readme",
-  "files": ["/dist"],
   "keywords": [
     "typescript",
     "jodit",
@@ -26,8 +25,7 @@
     "start": "ng serve",
     "build": "ng build angular-jodit",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "publish": "npm publish"
+    "test": "ng test"
   },
   "private": false,
   "dependencies": {

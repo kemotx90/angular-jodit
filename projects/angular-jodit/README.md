@@ -1,24 +1,97 @@
-# AngularJodit
+# angular-jodit
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
+angular-jodit is a streamlined and small project that allows you to use `Jodit` within an angular project without compromise.
+To allow angular users (including me) a quick approach to using it,
+the jodit editor has been wrapped inside a component that allows you to manage the text in the editor in compiling and retrieving,
+using the most classic angular reactive forms, specifically, it is sufficient to use a
 
-## Code scaffolding
+```typescript 
+FormControl<string>
+```
 
-Run `ng generate component component-name --project angular-jodit` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project angular-jodit`.
-> Note: Don't forget to add `--project angular-jodit` or else it will be added to the default project in your `angular.json` file. 
+The component is a standalone component that needs to be imported in order to be used, as it is done for example for the Angular CKD.
+The component uses Signal (default for Angular 17) for proper synchronization and refresh.
 
-## Build
+N.B. This project is a self-taught project aimed at helping those who use Jodit for Angular.
+We are not affiliated with the developers of Jodit, who we would like to thank for their excellent work.
 
-Run `ng build angular-jodit` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Version
 
-## Publishing
+| Jodit          | Angular | angular-jodit |
+|----------------|---------|---------------|
+| 4.0.0-beta.117 | 17+     | 0.0.6         |
 
-After building your library with `ng build angular-jodit`, go to the dist folder `cd dist/angular-jodit` and run `npm publish`.
+## Installation
 
-## Running unit tests
+Import this dependency into your project in the following way, use `npm i --save angular-jodit` or `npm i -D --save angular-jodit`,
+whatever you prefer.
 
-Run `ng test angular-jodit` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Usage
 
-## Further help
+In TS File
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```typescript
+@Component({})
+export class MyComponent {
+
+  editorTextForm = this.formBuilder.nonNullable.control('');
+
+  constructor(
+    private formBuilder: FormBuilder
+  ) {
+  }
+
+}
+```
+
+In HTML Template
+
+```html
+
+<angular-jodit [formControl]="editorTextForm" [options]="joditConfig"></angular-jodit>
+```
+
+joditConfig is an object that contains the editor's configurations and it is the same object that you can find explained in the official jodit documentation.
+
+Example of joditConfig
+
+```typescript
+joditConfi: any = {
+  observer: {
+    timeout: 100
+  },
+  buttons: [
+    'fontsize', 'brush', '|',
+    'bold', 'italic', 'underline', 'strikethrough', '|',
+  ],
+  textIcons: false,
+  spellcheck: true,
+  width: 'auto',
+  height: 'auto',
+  language: 'en',
+  toolbar: true,
+  showCharsCounter: false,
+  showWordsCounter: false,
+  showXPathInStatusbar: false,
+  toolbarButtonSize: "middle" as any,
+  theme: 'default',
+  useSplitMode: false,
+  colorPickerDefaultTab: 'color' as any,
+  removeButtons: [],
+  disablePlugins: [],
+  events: {}
+}
+```
+
+## License
+
+MIT
+
+## Contact Information
+
+Use the git channel for bugs and requests.
+
+## Changelog
+
+* V.0.0.1. First publication.
+* V.0.0.2 - V.0.0.6 Minor Fix configuration.
