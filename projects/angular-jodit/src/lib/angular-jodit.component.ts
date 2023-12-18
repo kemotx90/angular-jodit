@@ -1,10 +1,13 @@
 import {
   AfterViewInit,
-  Component, effect, EffectRef,
+  Component,
+  effect,
+  EffectRef,
   ElementRef,
   forwardRef,
   Input,
-  OnDestroy, signal,
+  OnDestroy,
+  signal,
   ViewChild,
   WritableSignal
 } from '@angular/core';
@@ -35,7 +38,7 @@ export class AngularJoditComponent implements AfterViewInit, ControlValueAccesso
     if (this.editorReady()) {
       this.editor!.value = this.editorText();
     }
-  });
+  }, {allowSignalWrites: true});
 
   private onChange: any = (): void => {
   };

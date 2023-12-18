@@ -95,3 +95,4 @@ Use the git channel for bugs and requests.
 
 * V.0.0.1. First publication.
 * V.0.0.2 - V.0.0.6 Minor Fix configuration.
+* V.0.0.7 - Fix Signal Effect
