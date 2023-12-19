@@ -51,6 +51,7 @@ export class AngularJoditComponent implements AfterViewInit, ControlValueAccesso
   ngAfterViewInit(): void {
     this.editor = Jodit.make(this.editorElement.nativeElement, this.options);
     this.editor.events.on('change', this.onChange);
+    this.editor.events.on('focus', this.onTouched);
     this.editorReady.set(this.editor.isReady);
   }
 
