@@ -1,5 +1,5 @@
 import {
-  AfterViewInit,
+  AfterViewInit, ChangeDetectionStrategy,
   Component,
   effect,
   EffectRef,
@@ -24,7 +24,8 @@ import {Jodit} from "jodit";
     provide: NG_VALUE_ACCESSOR,
     useExisting: forwardRef(() => AngularJoditComponent),
     multi: true
-  }]
+  }],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AngularJoditComponent implements AfterViewInit, ControlValueAccessor, OnDestroy {
   @ViewChild('editor') editorElement!: ElementRef;

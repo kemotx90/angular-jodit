@@ -96,4 +96,5 @@ Use the git channel for bugs and requests.
 * V.0.0.1. First publication.
 * V.0.0.2 - V.0.0.6 Minor Fix configuration.
 * V.0.0.7 - Fix Signal Effect.
-* V.0.0.8 - improved the cohesion between jodit and the reactive form.
+* V.0.1.0 - improved the cohesion between jodit and the reactive form + update dependencies.
+* V.0.1.1 - Update dependencies.

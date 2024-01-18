@@ -1,10 +1,10 @@
 {
   "name": "angular-jodit",
-  "version": "0.0.9",
+  "version": "0.1.1",
   "peerDependencies": {
-    "@angular/common": "^17.0.7",
-    "@angular/core": "^17.0.7",
-    "jodit": "^4.0.0-beta.117"
+    "@angular/common": "^17.1.0",
+    "@angular/core": "^17.1.0",
+    "jodit": "^4.0.6"
   },
   "dependencies": {
     "tslib": "^2.3.0"
@@ -29,8 +29,5 @@
     "reactive form rich text editor"
   ],
   "author": "Daniele Carlini",
-  "license": "MIT",
-  "scripts": {
-    "publish": "npm publish"
-  }
+  "license": "MIT"
 }
