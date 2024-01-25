@@ -97,7 +97,8 @@ Use the git channel for bugs and requests.
 * V.0.0.2 - V.0.0.6 Minor Fix configuration.
 * V.0.0.7 - Fix Signal Effect.
 * V.0.1.0 - improved the cohesion between jodit and the reactive form + update dependencies.
-* V.0.1.1 - Update dependencies.
+* V.0.1.1 - Update angular dependencies to 17.1.0 (Remove axios vulnerability [GIT](https://github.com/angular/angular-cli/issues/26349)).
+* V.0.1.2 - Update angular dependencies to 17.1.1 (Remove vite vulnerability [GIT](https://github.com/angular/angular-cli/issues/26916)). 
 
 ## BUILD
 
