@@ -1,5 +1,6 @@
 import {
-  AfterViewInit, ChangeDetectionStrategy,
+  AfterViewInit,
+  ChangeDetectionStrategy,
   Component,
   effect,
   EffectRef,
@@ -33,6 +34,9 @@ export class AngularJoditComponent implements AfterViewInit, ControlValueAccesso
 
   private editor: Jodit | undefined = undefined;
 
+  private readonly events: string[] = ["beforeCommand", "afterCommand", "change", "keydown", "drop",
+    "cut", "paste"];
+
   private readonly editorText: WritableSignal<string> = signal<string>('');
   private readonly editorReady: WritableSignal<boolean> = signal<boolean>(!!this.editor?.isReady);
   private readonly valueChanges: EffectRef = effect(() => {
@@ -51,7 +55,7 @@ export class AngularJoditComponent implements AfterViewInit, ControlValueAccesso
 
   ngAfterViewInit(): void {
     this.editor = Jodit.make(this.editorElement.nativeElement, this.options);
-    this.editor.events.on('change', this.onChange);
+    this.editor.events.on(this.events, this.onChange);
     this.editor.events.on('focus', this.onTouched);
     this.editorReady.set(this.editor.isReady);
   }
