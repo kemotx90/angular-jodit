@@ -1,10 +1,10 @@
 {
   "name": "angular-jodit",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "peerDependencies": {
-    "@angular/common": "^17.2.1",
-    "@angular/core": "^17.2.1",
-    "jodit": "^4.0.6"
+    "@angular/common": "^17.3.0",
+    "@angular/core": "^17.3.0",
+    "jodit": "^4.0.18"
   },
   "dependencies": {
     "tslib": "^2.3.0"

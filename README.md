@@ -98,9 +98,10 @@ Use the git channel for bugs and requests.
 * V.0.0.7 - Fix Signal Effect.
 * V.0.1.0 - improved the cohesion between jodit and the reactive form + update dependencies.
 * V.0.1.1 - Update angular dependencies to 17.1.0 (Remove axios vulnerability [GIT](https://github.com/angular/angular-cli/issues/26349)).
-* V.0.1.2 - Update angular dependencies to 17.1.1 (Remove vite vulnerability [GIT](https://github.com/angular/angular-cli/issues/26916)). 
+* V.0.1.2 - Update angular dependencies to 17.1.1 (Remove vite vulnerability [GIT](https://github.com/angular/angular-cli/issues/26916)).
 * V.0.1.3 - V.0.1.4 - Improved event catching for update formControl.
 * V.0.1.5 - Update angular dependencies to 17.2.1 (Remove NPM IP vulnerability [GIT](https://github.com/advisories/GHSA-78xj-cgh5-2h22)).
+* V.0.1.6 - Update angular dependencies to 17.3.0 (Follow-redirects).
 
 ## BUILD
 
