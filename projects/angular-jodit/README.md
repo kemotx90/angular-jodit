@@ -103,4 +103,5 @@ Use the git channel for bugs and requests.
 * V.0.1.5 - Update angular dependencies to 17.2.1 (Remove NPM IP vulnerability [GIT](https://github.com/advisories/GHSA-78xj-cgh5-2h22)).
 * V.0.1.6 - Update angular dependencies to 17.3.0 (Follow-redirects).
 * V.0.1.7 - Update angular dependencies to 17.3.2 (Remove webpack-dev-middleware [GIT](https://github.com/advisories/GHSA-wr3j-pwj9-hqq6)).
+* V.0.1.8 - Update angular dependencies to 17.3.4 (Remove vite vulnerability).
 
