@@ -20,6 +20,7 @@ We are not affiliated with the developers of Jodit, who we would like to thank f
 | Jodit           | Angular | angular-jodit |
 |-----------------|---------|---------------|
 | 4.0.0-beta.117+ | 17+     | 0.0.6+        |
+| 4.2.21+         | 18+     | 1.0.0+        |
 
 ## Installation
 
@@ -104,6 +105,7 @@ Use the git channel for bugs and requests.
 * V.0.1.6 - Update angular dependencies to 17.3.0 (Follow-redirects).
 * V.0.1.7 - Update angular dependencies to 17.3.2 (Remove webpack-dev-middleware [GIT](https://github.com/advisories/GHSA-wr3j-pwj9-hqq6)).
 * V.0.1.8 - Update angular dependencies to 17.3.4 (Remove vite vulnerability).
+* V.1.0.0 - Update angular dependencies to 18.0.0.
 
 ## BUILD
 
