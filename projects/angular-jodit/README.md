@@ -107,4 +107,4 @@ Use the git channel for bugs and requests.
 * V.0.1.8 - Update angular dependencies to 17.3.4 (Remove vite vulnerability).
 * V.1.0.0 - Update angular dependencies to 18.0.0.
 * V.1.0.2 - Update WS for mitigation [CWE-476](https://cwe.mitre.org/data/definitions/476.html).
-
+* V.1.0.3 - Update angular dependencies to 18.2.3.
