@@ -21,6 +21,7 @@ We are not affiliated with the developers of Jodit, who we would like to thank f
 |-----------------|---------|---------------|
 | 4.0.0-beta.117+ | 17+     | 0.0.6+        |
 | 4.2.21+         | 18+     | 1.0.0+        |
+| 4.5.17+         | 19+     | 2.0.0+        |
 
 ## Installation
 
@@ -32,6 +33,7 @@ whatever you prefer.
 In TS File
 
 ```typescript
+
 @Component({})
 export class MyComponent {
 
@@ -108,6 +110,7 @@ Use the git channel for bugs and requests.
 * V.1.0.0 - Update angular dependencies to 18.0.0.
 * V.1.0.2 - Update WS for mitigation [CWE-476](https://cwe.mitre.org/data/definitions/476.html).
 * V.1.0.3 - Update angular dependencies to 18.2.3.
+* V.2.0.0 - Update angular dependencies to 19.2.3. + update jodit version 4.5.17 + update typescript version 5.8.2
 
 ## BUILD
 

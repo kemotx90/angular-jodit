@@ -16,17 +16,16 @@ import {ControlValueAccessor, NG_VALUE_ACCESSOR} from "@angular/forms";
 import {Jodit} from "jodit";
 
 @Component({
-  selector: 'angular-jodit',
-  standalone: true,
-  imports: [],
-  template: `<textarea #editor></textarea>`,
-  styles: ``,
-  providers: [{
-    provide: NG_VALUE_ACCESSOR,
-    useExisting: forwardRef(() => AngularJoditComponent),
-    multi: true
-  }],
-  changeDetection: ChangeDetectionStrategy.OnPush
+    selector: 'angular-jodit',
+    imports: [],
+    template: `<textarea #editor></textarea>`,
+    styles: ``,
+    providers: [{
+            provide: NG_VALUE_ACCESSOR,
+            useExisting: forwardRef(() => AngularJoditComponent),
+            multi: true
+        }],
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AngularJoditComponent implements AfterViewInit, ControlValueAccessor, OnDestroy {
   @ViewChild('editor') editorElement!: ElementRef;
