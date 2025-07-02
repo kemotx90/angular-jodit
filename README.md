@@ -111,6 +111,7 @@ Use the git channel for bugs and requests.
 * V.1.0.2 - Update WS for mitigation [CWE-476](https://cwe.mitre.org/data/definitions/476.html).
 * V.1.0.3 - Update angular dependencies to 18.2.3.
 * V.2.0.0 - Update angular dependencies to 19.2.3. + update jodit version 4.5.17 + update typescript version 5.8.2
+* V.3.0.0 - Update angular dependencies to 20 + update jodit version 4.6.2 + update typescript version 5.8.3
 
 ## BUILD
 
