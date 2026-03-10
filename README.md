@@ -24,6 +24,7 @@ We are not affiliated with the developers of Jodit, who we would like to thank f
 | 4.5.17+         | 19+     | 2.0.0+        |
 | 4.6.0+          | 20+     | 3.0.0+        |
 | 4.7.9+          | 20.3+   | 3.1.0+        |
+| 4.11.3+         | 21.2+   | 3.2.0+        |
 
 ## Installation
 
@@ -115,6 +116,7 @@ Use the git channel for bugs and requests.
 * V.2.0.0 - Update angular dependencies to 19.2.3. + update jodit version 4.5.17 + update typescript version 5.8.2
 * V.3.0.0 - Update angular dependencies to 20 + update jodit version 4.6.2 + update typescript version 5.8.3
 * V.3.1.1 - Update angular dependencies to 20.3.10 + update jodit version 4.7.9 + update typescript version 5.9.3.
+* V.3.2.0 - Update angular dependencies to 21.2.1 + update jodit version 4.11.3.
 
 ## BUILD
 

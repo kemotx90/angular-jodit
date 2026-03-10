@@ -6,10 +6,12 @@ import {
   EffectRef,
   ElementRef,
   forwardRef,
-  Input,
+  input,
+  InputSignal,
   OnDestroy,
+  Signal,
   signal,
-  ViewChild,
+  viewChild,
   WritableSignal
 } from '@angular/core';
 import {ControlValueAccessor, NG_VALUE_ACCESSOR} from "@angular/forms";
@@ -29,8 +31,8 @@ import {Jodit} from "jodit";
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AngularJoditComponent implements AfterViewInit, ControlValueAccessor, OnDestroy {
-  @ViewChild('editor') editorElement!: ElementRef;
-  @Input() options: any;
+  options: InputSignal<any> = input.required<any>();
+  editorElement: Signal<ElementRef> = viewChild.required<ElementRef>('editor');
 
   private editor: Jodit | undefined = undefined;
 
@@ -47,11 +49,8 @@ export class AngularJoditComponent implements AfterViewInit, ControlValueAccesso
   private onTouched: any = (): void => {
   };
 
-  constructor() {
-  }
-
   ngAfterViewInit(): void {
-    this.editor = Jodit.make(this.editorElement.nativeElement, this.options);
+    this.editor = Jodit.make(this.editorElement().nativeElement, this.options());
     this.editor.events.on('change', this.onChange);
     this.editor.events.on('focus', this.onTouched);
     this.editorReady.set(this.editor.isReady);
