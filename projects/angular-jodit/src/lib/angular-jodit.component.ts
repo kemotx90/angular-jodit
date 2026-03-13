@@ -42,7 +42,7 @@ export class AngularJoditComponent implements AfterViewInit, ControlValueAccesso
     if (this.editorReady()) {
       this.editor!.setEditorValue(this.editorText());
     }
-  }, {allowSignalWrites: true});
+  });
 
   private onChange: any = (): void => {
   };

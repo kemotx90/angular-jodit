@@ -117,6 +117,7 @@ Use the git channel for bugs and requests.
 * V.3.0.0 - Update angular dependencies to 20 + update jodit version 4.6.2 + update typescript version 5.8.3
 * V.3.1.1 - Update angular dependencies to 20.3.10 + update jodit version 4.7.9 + update typescript version 5.9.3.
 * V.3.2.0 - Update angular dependencies to 21.2.1 + update jodit version 4.11.3.
+* V.3.2.1 - Remove allowSignalWrites deprecated for Update angular 21+.
 
 ## BUILD
 
